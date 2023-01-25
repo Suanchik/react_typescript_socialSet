@@ -1,25 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Header from './components/Header/header';
+import NavBar from './components/NavBar/navBar';
+import Content from './components/Content/content';
+import { useEffect } from 'react';
+import { initializedAsync } from './redux/reducers/app';
+import loading from './assets/progress.gif';
+import { UseTypedDispatch, UseTypedSelector } from './@types/types';
 
 function App() {
+
+  const initialized = UseTypedSelector(state => state.AppData.initialized);
+  const dispatch = UseTypedDispatch();
+
+  useEffect(() => {
+    dispatch(initializedAsync())
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>  
+        <Header/>
+        <div className="Project">
+            <div className="App">
+              <NavBar/>
+              {
+                 !initialized ? 
+                 <div className='initializedLoader'>
+                  <img src={loading} alt="loading"/>
+                 </div>:
+                <Content/>
+                }
+            </div>
+        </div>
+      </>
   );
 }
 

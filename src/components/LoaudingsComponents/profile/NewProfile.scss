@@ -1,0 +1,126 @@
+.loadingProfile {
+    display: flex;
+    .imgname {
+        .nameloading {
+            height: 22px;
+            width: 208px;
+            margin-left: 20px;
+            box-shadow: 0 0 3px 1px rgb(189, 189, 189);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .name {
+                width: 180px;
+                height: 15px;
+                border-radius: 4px;
+                background-color: rgb(212, 212, 212);
+            }
+        }
+        .img {
+            width: 208px;
+            height: 208px;
+            background-color: rgb(212, 212, 212);
+            margin-left: 20px;
+            box-shadow: 0 0 3px 1px rgb(189, 189, 189);
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+        .button {
+            width: 151px;
+            border-radius: 2px;
+            margin-left: 48px;
+            background-color: rgb(212, 212, 212);
+            height: 42px;
+            margin-top: 23px;
+        }
+        .statusHead {
+            height: 18px;
+            width: 60px;
+            background-color: rgb(212, 212, 212);
+            margin-left: 15px;
+            margin-top: 21px;
+            border-radius: 3px;
+        }
+        .status {
+            width: 215px;
+            height: 200px;
+            margin-left: 15px;
+            box-shadow: 0 0 3px 1px rgb(189, 189, 189);
+            margin-top: 6px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(212, 212, 212);
+            .statusText {
+                margin-top: 30px;
+                background-color: rgb(212, 212, 212);
+                width: 180px;
+                height: 100px;
+                border-radius: 10px;
+            }
+        }
+    }
+    .profileInfo {
+        .instruction  {
+            background-color: rgb(212, 212, 212);
+            box-shadow: 0 0 3px 1px rgb(189, 189, 189);
+            border-radius: 5px;
+            width: 630px;
+            height: 23px;
+            margin-left: 16px;
+            margin-bottom: 11px;
+        }
+        .mainInfo {
+            box-shadow: 0 0 3px 1px rgb(189, 189, 189);
+            width: 615px;
+            margin-left: 16px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 22px 0 0 0;
+            .items {
+                height: 30px;
+                margin-bottom: 24px;
+                .discription {
+                    background-color: rgb(212, 212, 212);
+                    height: 30px;
+                    width: 85px;
+                    display: inline-block;
+                    border-radius: 5px;
+                    margin-left: 11px;
+                    margin-right: 153px;
+                }
+                .two {
+                    width: 119px;
+                    margin-right: 120px;
+                }
+                .three {
+                    width: 105px;
+                    margin-right: 135px;
+                }
+                .serverloading {
+                    display: inline-block;
+                    border-radius: 5px;
+                    height: 30px;
+                    width: 200px;
+                    box-shadow: 0 0 3px 1px rgb(189, 189, 189);
+                    span {
+                        border-radius: 3px;
+                        width: 160px;
+                        display: block;
+                        margin-top: 8px;
+                        margin-left: 20px;
+                        background-color: rgb(212, 212, 212);
+                        height: 15px;
+                    }
+                }
+            }
+        }
+        .bigger {
+            height: 292px;
+            display: block;
+        }
+    }
+}

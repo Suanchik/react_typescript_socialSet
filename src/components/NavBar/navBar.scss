@@ -1,0 +1,48 @@
+.nav {
+    padding: 20px 0px 0px 0px;
+    height: 200px;
+    .link {
+        transition: all ease-in-out 0.3s;
+        height: 25px;
+        display: flex;
+        margin-bottom: 6px;
+        align-items: center;
+        border-radius: 3px;
+        padding: 0 0 0 5px;
+        .totalCount {
+            font-size: small;
+            // height: 15px;
+            padding: 2px 0 0px 0;
+            float: right
+        }
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            display: inline-block;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .icon {
+            width: 17px;
+            height: 17px;
+            margin-right: 10px;
+            fill: rgb(0, 0, 0);
+        }
+        .active {
+            color: rgb(135, 173, 59);
+        }
+    }
+    .link:hover .icon {
+        transition: all ease-in-out 0.3s;
+        fill: rgb(98, 131, 33);
+    }
+    .link:hover a{
+        transition: all ease-in-out 0.3s;
+        color: rgb(177, 4, 177);
+    }
+    .link:hover {
+        transition: all ease-in-out 0.3s;
+        padding: 0 0 0 10px;
+    }
+}

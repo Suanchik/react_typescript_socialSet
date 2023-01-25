@@ -1,0 +1,139 @@
+.profileImgStatus {
+    .photoName {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 2px;
+        .img {
+            .ava {
+                width: 208px;
+                margin-left: 1px;
+                border-radius: 10px;
+                box-shadow: 0 0 0 1px rgb(199, 199, 199);
+            }
+            .glass {
+                position: absolute;
+                height: 180px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 180px;
+                cursor: pointer;
+                padding: 15px;
+                opacity: 0;
+                background-color: #fff;
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            .addPhoto {
+                position: absolute;
+                margin-top: -35px;
+                text-align: center;
+                background-color: rgb(255, 255, 255, 0.7);
+                cursor: pointer;
+                padding: 5px 0 5px 0;
+                width: 210px;
+                margin-left: 1px;
+                opacity: 0;
+                label {
+                    cursor: pointer;
+                }
+            }
+            &:hover .addPhoto {
+                transition: all ease-in-out 0.3s;
+                opacity: 1;
+            }
+            &:hover .glass {
+                transition: all ease-in-out 0.3s;
+                opacity: 0.4;
+            }
+        }
+        .name {
+            font-size: 16px;
+            height: 20px;
+            word-break:break-all;
+            overflow: hidden;
+            text-align: center;
+            word-break: break-all;
+            width: 288px;
+            padding: 2px 0 5px 0;
+        }
+    }
+    .yourProfile {
+        border: none;
+        box-shadow: 0 0 0 1px rgb(93, 93, 255);;
+        width: 150px;
+        text-align: center;
+        border-radius: 2px;
+        color: rgb(93, 93, 255);
+        padding: 7px 0 7px 0;
+        margin-top: 20px;
+        background-color: rgb(255, 255, 255);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .unfollow {
+        border: none;
+        width: 150px;
+        border-radius: 2px;
+        padding: 7px 0 7px 0;
+        margin-top: 20px;
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        color: rgb(88, 88, 172);
+        box-shadow: 0 0 0 1px rgb(136, 136, 136);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        &:hover {
+            transition: all 0.2s ease-in-out;
+            background-color: rgb(233, 233, 233);
+        }
+    }
+    .unfollowing {
+        background-color: rgb(255, 255, 255);
+        opacity: 0.5;
+        border: none;
+        width: 150px;
+        border-radius: 7px;
+        padding: 7px 0 7px 0;
+        margin-top: 20px;
+        cursor: pointer;
+        opacity: 0.5;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .follow {
+        background-color: rgb(68, 68, 68);
+        color: rgb(255, 255, 255);
+        box-shadow: 0 0 0 1px rgb(97, 97, 97);
+        width: 150px;
+        border-radius: 7px;
+        padding: 7px 0 7px 0;
+        border: none;
+        margin-top: 20px;
+        cursor: pointer;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        &:hover {
+            transition: all 0.2s ease-in-out;
+            background-color: rgb(97, 97, 97);
+        }
+    }
+    .following {
+        width: 150px;
+        background-color: rgb(109, 109, 109);
+        color: rgb(224, 224, 224);
+        border-radius: 7px;
+        padding: 7px 0 7px 0;
+        border: none;
+        margin-top: 20px;
+        cursor: pointer;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .h4 {
+        font-weight: 400;
+        font-size: larger;
+        text-align: start;
+        margin-left: 15px;
+        color: rgb(0, 0, 0);
+        opacity: 0.7;
+    }
+}

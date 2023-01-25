@@ -1,0 +1,124 @@
+.header {
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 1px 0px rgb(5, 5, 5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    height: 50px;
+    h1 {
+        font-size: 20px;
+        font-weight: 500;
+        width: 1200px;
+        display: flex;
+        align-items: center;
+        .searchTypeWrapper {
+            margin-left: 400px;
+            width: 183px;
+            .allPeople {
+                box-shadow: 0 0 0 1px rgb(199, 199, 199);
+                padding: 5px;
+                width: 80px;
+                text-align: center;
+                font-size: 15px;
+                float: right;
+                font-weight: 400;
+                opacity: 0.6;
+                cursor: pointer;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            .searchType {
+                span {
+                    box-shadow: 0 0 0 1px rgb(199, 199, 199);
+                    padding: 5px;
+                    width: 80px;
+                    text-align: center;
+                    display: inline-block;
+                    font-size: 15px;
+                    font-weight: 400;
+                    opacity: 0.6;
+                    cursor: pointer;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+                .selectedType {
+                    background-color: #fff;
+                    opacity: 0.8;
+                }
+            }
+        }
+        img {
+            display: inline-block;
+            width: 30px;
+        }
+        .search {
+            display: flex;
+        }
+        .searchHeader {
+            display: flex;
+            height: 30px;
+            align-items: center;
+            float: right;
+            margin-left: 30px;
+            width: 300px;
+            box-shadow: 0 0 0 1px rgb(204, 204, 204);
+            border-radius: 5px;
+            background-color: #fff;
+            img {
+                width: 25px;
+                height: 85%;
+                opacity: 0.4;
+                box-shadow: 0 0 0 1px rgb(192, 192, 192);
+                padding: 2px;
+                border-radius: 2px;
+                cursor: pointer;
+                &:hover {
+                    background-color: rgb(241, 241, 241);
+                    opacity: 1;
+                }
+            }
+            input {
+                width: 230px;
+                border: none;
+                outline: none;
+                margin-left: 15px;
+            }
+        }
+        span {
+            margin-left: 1px;
+        }
+        .softsign {
+            display: inline-block;
+        }
+        .login {
+            // position: absolute;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            font-weight: 400;
+            margin-left: 10px;
+            margin-right: 40px;
+            padding: 3px 25px 5px 25px;
+            border-radius: 2px;
+            cursor: pointer;
+            box-shadow: 0 0 0 1px rgb(179, 179, 179);
+            background-color: #fff;
+            &:hover {
+                transition: all ease-in-out 0.2s;
+                box-shadow: 0 0 0 1px rgb(255, 255, 255);
+                background-color: #fff;
+                box-shadow: 0 0 0 1px rgb(112, 112, 209);
+                color: rgb(88, 88, 255);
+            }
+            // .log {
+            //     font-weight: 400;
+            //     color: black;
+            // }
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+}

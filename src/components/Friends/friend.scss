@@ -1,0 +1,104 @@
+.friends_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 40px;
+    .loading {
+        opacity: 0.5;
+    }
+    .nousers {
+        margin-top: 50px;
+        font-size: 25px;
+        padding: 35px 0px 0px 0px;
+        text-align: center;
+        font-size: 15px;
+        margin-right: 20px;
+    }
+    .friend {
+        background-color: #fff;
+        padding: 15px;
+        box-shadow: 0 0 0px 1px rgb(179, 179, 179);
+        margin: 0 50px 50px 0;
+        width: 300px;
+        height: 130px;
+        display: grid;
+        grid-template-columns: 100px 200px;
+        border-radius: 8px 8px 8px 8px;
+        gap: 0px;
+        .nameStatus {
+            a {
+                text-decoration: none;
+            }
+            word-break: break-all;
+            .name {
+                font-weight: bold;
+                text-align: center;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: black;
+                cursor: pointer;
+                &:hover {
+                    color: purple;
+                    text-decoration: underline;
+                }
+            }
+            .status {
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 14px;
+                margin-top: 5px;
+                word-break:inherit;
+                overflow: hidden;
+                background-color: rgb(236, 236, 236);
+                padding: 5px;
+                border-radius: 5px;
+            }
+            background-color: rgb(255, 255, 255);
+            border-radius: 0 8px 8px 0;
+            padding: 5px 10px 10px 10px;
+        }
+        .imgButton {
+            img {
+                width: 90px;
+                cursor: pointer;
+                margin-bottom: -4px;
+                box-shadow: 0.2px 0.2px 0px 0.2px rgb(185, 185, 185);
+            }
+            button {
+                width: 90px;
+                color: #fff;
+                height: 30px;
+                margin-top: 10px;
+                padding: 3px 0 3px 0;
+                border: none;
+                border-radius: 6px 6px 6px 6px;
+                cursor: pointer;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+            }
+            .unfollow {
+                background-color: rgb(255, 255, 255);
+                color: rgb(88, 88, 172);
+                box-shadow: 0 0 0 1px rgb(136, 136, 136);
+            }
+            .unfollow:hover {
+                transition: all 0.2s ease-in-out;
+                background-color: rgb(233, 233, 233);
+            }
+            .follow {
+                background-color: rgb(68, 68, 68);
+                color: rgb(255, 255, 255);
+                box-shadow: 0 0 0 1px rgb(97, 97, 97);
+            }
+            .follow:hover {
+                transition: all 0.2s ease-in-out;
+                background-color: rgb(97, 97, 97);
+            }
+            .unfollowing {
+                background-color: rgb(255, 255, 255);
+                opacity: 0.5;
+            }
+            .following {
+                background-color: rgb(109, 109, 109);
+                color: rgb(224, 224, 224);
+            }
+        }
+    }
+}

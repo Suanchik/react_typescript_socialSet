@@ -1,0 +1,28 @@
+.Project {
+  display: flex;
+  justify-content: center;
+  .App {
+    display: grid;
+    grid-template-columns: 200px 100%;
+    scrollbar-width: none;
+    .initializedLoader {
+      border-radius: 2px;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      width: 980px;
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+body {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

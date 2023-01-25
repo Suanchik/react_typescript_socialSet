@@ -1,0 +1,33 @@
+.friends_info {
+    margin-bottom: 50px;
+    margin-top: 20px;
+    .explanation {
+        text-align: center;
+        opacity: 0.8;
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 40px;
+    }
+    .followings {
+        font-size: larger;
+        font-weight: 500;
+    }
+    .count {
+        margin-left: 129px;
+        border-radius: 5px;
+        padding: 10px;
+        font-weight: 400;
+        display: inline-block;
+        background-color: #fff;
+        box-shadow: 0 0 0 1px rgb(180, 180, 180);
+    }
+    input {
+        float: right;
+        margin-right: 90px;
+        padding: 5px 5px 6px 5px;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        box-shadow: 0 0 0 1px rgb(128, 0, 128, 0.3);
+    }
+}

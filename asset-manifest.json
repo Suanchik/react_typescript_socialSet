@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react_typescript_socialSet/static/css/main.58df1438.css",
-    "main.js": "/react_typescript_socialSet/static/js/main.99e8a243.js",
+    "main.css": "/react_typescript_socialSet/static/css/main.621c2113.css",
+    "main.js": "/react_typescript_socialSet/static/js/main.4e2ac063.js",
     "static/js/787.033e661f.chunk.js": "/react_typescript_socialSet/static/js/787.033e661f.chunk.js",
     "static/media/loading.gif": "/react_typescript_socialSet/static/media/loading.803f24369a085e35482e.gif",
     "static/media/progress.gif": "/react_typescript_socialSet/static/media/progress.8046c15aa22a2aa88132.gif",
@@ -16,12 +16,12 @@
     "static/media/right.svg": "/react_typescript_socialSet/static/media/right.cb32c3d2db379c2bca8406fc5f7f7ae3.svg",
     "static/media/left.svg": "/react_typescript_socialSet/static/media/left.e8ea531a8d72e0778b2f78280e5fa910.svg",
     "static/media/arrow-square-down.svg": "/react_typescript_socialSet/static/media/arrow-square-down.575579f56bef6cc5bfc9f68312fa5a1b.svg",
-    "main.58df1438.css.map": "/react_typescript_socialSet/static/css/main.58df1438.css.map",
-    "main.99e8a243.js.map": "/react_typescript_socialSet/static/js/main.99e8a243.js.map",
+    "main.621c2113.css.map": "/react_typescript_socialSet/static/css/main.621c2113.css.map",
+    "main.4e2ac063.js.map": "/react_typescript_socialSet/static/js/main.4e2ac063.js.map",
     "787.033e661f.chunk.js.map": "/react_typescript_socialSet/static/js/787.033e661f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58df1438.css",
-    "static/js/main.99e8a243.js"
+    "static/css/main.621c2113.css",
+    "static/js/main.4e2ac063.js"
   ]
 }

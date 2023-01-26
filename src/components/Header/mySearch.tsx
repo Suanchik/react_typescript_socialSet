@@ -74,12 +74,16 @@ useEffect(() => {
                 }
             </div>
             <div className='searchHeader'>
-                <img
-                    onClick={() => searchByname()}
-                    src={glass}
-                    alt="glassicon" 
-                    placeholder='searching...'
-                />
+                <div 
+                className={searchType && value ? 'searchButton': 'searchDisabledButton'}>
+                    Поиск
+                    <img
+                        onClick={() => searchByname()}
+                        src={glass}
+                        alt="glassicon" 
+                        placeholder='searching...'
+                    />
+                </div>
                 <input
                     type="text"
                     value={value}

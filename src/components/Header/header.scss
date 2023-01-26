@@ -9,11 +9,11 @@
     h1 {
         font-size: 20px;
         font-weight: 500;
-        width: 1200px;
+        width: 1180px;
         display: flex;
         align-items: center;
         .searchTypeWrapper {
-            margin-left: 400px;
+            margin-left: 360px;
             width: 183px;
             .allPeople {
                 box-shadow: 0 0 0 1px rgb(199, 199, 199);
@@ -67,18 +67,37 @@
             box-shadow: 0 0 0 1px rgb(204, 204, 204);
             border-radius: 5px;
             background-color: #fff;
-            img {
-                width: 25px;
-                height: 85%;
-                opacity: 0.4;
+            .searchButton, .searchDisabledButton {
+                display: flex;
+                border-radius: 5px 0 0 5px;
                 box-shadow: 0 0 0 1px rgb(192, 192, 192);
-                padding: 2px;
-                border-radius: 2px;
+                font-size: small;
+                justify-content: center;
+                align-items: center;
+                height: 30px;
+                width: 80px;
+                padding: 0 5px 0 9px;
+                opacity: 0.8;
                 cursor: pointer;
-                &:hover {
-                    background-color: rgb(241, 241, 241);
-                    opacity: 1;
+                img {
+                    width: 20px;
+                    height: 65%;
+                    padding: 2px;
+                    border-radius: 2px;
+                    margin-left: 10px;
                 }
+            }
+            .searchButton:hover {
+                background-color: rgb(241, 241, 241);
+                opacity: 1;
+            }
+            .searchDisabledButton {
+                cursor:auto;
+                opacity: 0.4;
+            }
+            .searchDisabledButton:hover {
+                background-color: #fff;
+                opacity: 0.4;
             }
             input {
                 width: 230px;

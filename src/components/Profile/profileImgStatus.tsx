@@ -18,7 +18,10 @@ const ProfileImgStatus: React.FC<ProfileImgStatusProps> = ({openPhoto, profile, 
     return (
         <div className='profileImgStatus'>
             <div className='photoName'>
-            <div className='name'>{profile.fullName}</div>
+            <div 
+            className='name'
+            title={profile.fullName.length > 25? profile.fullName: ''}
+            >{profile.fullName}</div>
                 <Photo openPhoto={openPhoto} profile={profile} userId={+userId}/>
                 <div style={{height: '50px'}}>
                 {

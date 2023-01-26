@@ -3,9 +3,8 @@
     display: flex;
     justify-content: center;
     height: 48px;
-    height: 48px;
     .pagesBlock {
-        width: 610px;
+        max-width: 610px;
         background-color: rgb(241, 241, 241);
         padding: 0 0 2px 0;
         display: flex;

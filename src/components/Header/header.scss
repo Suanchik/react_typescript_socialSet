@@ -12,6 +12,42 @@
         width: 1180px;
         display: flex;
         align-items: center;
+        .loginOut {
+            display: flex;
+            align-items: center;
+            .login {
+                // position: absolute;
+                color: rgb(0, 0, 0);
+                font-size: 15px;
+                font-weight: 400;
+                margin-left: 10px;
+                margin-right: 40px;
+                width: 100px;
+                height: 28px;
+                border-radius: 2px;
+                cursor: pointer;
+                box-shadow: 0 0 0 1px rgb(179, 179, 179);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover {
+                    transition: all ease-in-out 0.2s;
+                    box-shadow: 0 0 0 1px rgb(255, 255, 255);
+                    background-color: #fff;
+                    box-shadow: 0 0 0 1px rgb(112, 112, 209);
+                    color: rgb(88, 88, 255);
+                }
+            }
+            a {
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 28px;
+                color: black;
+            }
+        }
         .searchTypeWrapper {
             margin-left: 360px;
             width: 183px;
@@ -112,32 +148,6 @@
         .softsign {
             display: inline-block;
         }
-        .login {
-            // position: absolute;
-            color: rgb(0, 0, 0);
-            font-size: 15px;
-            font-weight: 400;
-            margin-left: 10px;
-            margin-right: 40px;
-            padding: 3px 25px 5px 25px;
-            border-radius: 2px;
-            cursor: pointer;
-            box-shadow: 0 0 0 1px rgb(179, 179, 179);
-            background-color: #fff;
-            &:hover {
-                transition: all ease-in-out 0.2s;
-                box-shadow: 0 0 0 1px rgb(255, 255, 255);
-                background-color: #fff;
-                box-shadow: 0 0 0 1px rgb(112, 112, 209);
-                color: rgb(88, 88, 255);
-            }
-            // .log {
-            //     font-weight: 400;
-            //     color: black;
-            // }
-        }
-        a {
-            text-decoration: none;
-        }
+        
     }
 }

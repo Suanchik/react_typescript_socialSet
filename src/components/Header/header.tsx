@@ -22,16 +22,15 @@ const Header = () => {
                 {
                         loading ?
                         '':
-                <span className='login'>
-                        <span>
+                        <div className='loginOut'>
                             {
-                                isAuth ? 
-                                <span className='log' onClick={() => dispatch(logOutAsync())}>log out</span>: 
-                                <NavLink to="/login"><span className='log'>log in</span></NavLink>
-                            }
-                        </span>
-                </span>
-}
+                            isAuth ? 
+                            <span className='login' onClick={() => dispatch(logOutAsync())}>log out</span>: 
+                            <span className='login'><NavLink to="/login">log in</NavLink></span>
+                        }
+                        </div>
+
+                }
             </h1>
         </header>
     )

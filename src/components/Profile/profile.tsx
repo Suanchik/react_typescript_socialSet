@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { getProfileAsynk, isLoading, openEdit } from '../../redux/reducers/profile';
 import './profile.scss';
 import * as qs from 'qs';
@@ -25,8 +25,9 @@ const Profile = () => {
     const [isFinishedLoading, setIsFinishedLoading] = useState(false);
     const dispatch = UseTypedDispatch();
     const firstRender = useRef(false);
-    const [followedFromSearch, setfollowedFromSearch] = useState<boolean>(qs.parse(window.location.search.substring(1)).followed === 'true' ? true: false)
-    const novigate = useNavigate()
+    const location = useLocation()
+    const [followedFromSearch, setfollowedFromSearch] = useState<boolean>(qs.parse(location.search.substring(1)).followed === 'true' ? true: false)
+    const novigate = useNavigate();
 
     const {userId} = useParams();
 
@@ -40,6 +41,9 @@ const Profile = () => {
         };
         firstRender.current = true;
     }, [isfollowed]);
+
+    console.log(followedFromSearch);
+    console.log(qs.parse(location.search.substring(1)).followed)
 
     useEffect(() => {
         if(isAuth) {
